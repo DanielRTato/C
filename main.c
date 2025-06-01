@@ -1,8 +1,15 @@
 #include <stdio.h>
-
+#include <stdbool.h>
 int main() {
 
-    // variables
+    //int = numeros enteros (4 bytes)
+    //float = numeros decimales (4 bytes)
+    //double = numeros decimales (8 bytes)
+    //char = caracteres (1 byte)
+    // char[] = cadenas de texto (array de caracteres, tamaño variable)	
+    //bool = booleanos (1 byte) true o false (requiere incluir <stdbool.h>)
+
+    // Variables
     int age = 28;
     int year = 2025;
     int quantity = 3;
@@ -22,7 +29,19 @@ int main() {
     printf("The value of pi is %.15lf\n",pi); // Por defecto solo muestra 6
     printf("The value of e us %.15lf\n",e);
 
-    
+    char grade = 'A';
+    char symbol = '!';
+    printf("Your favorite symbol us %c\n",symbol);
+    printf("Your grade is %c\n",grade);
+
+    char name [] = "Daniel"; //Array de caracteres para cadenas de texto 
+    printf("Hello %s\n",name); // %s es para cadenas de texto
+    printf("Hello %s, you are %d years old\n", name, age);
+
+    bool isOnline = 1; // true = 1 false = 0
+    bool isStudent = true;
+    printf("%d",isOnline);
+
 
     
 
